@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ขออนุมัติ-อนุญาต ซากดึกดำบรรพ์ — ค้า ส่งออก ขุดค้น แจ้งพบ กรมทรัพยากรธรณี">
+<title>ขออนุมัติ-อนุญาต — กองคุ้มครองซากดึกดำบรรพ์</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap');
+:root{--br:#2C1A0E;--bm:#6B3F1E;--mid:#8B5728;--am:#C47D2E;--al:#E8A84A;--cr:#F6F0E4;--cd:#EDE3CF;--line:#D4C4A0;--tx:#1E130A;--ts:#6B5438;--wh:#FFFDF8;--tl:#2F5D55;--rs:#9C3A28;--header-h:70px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Sarabun',sans-serif;color:var(--tx);background:var(--cr);line-height:1.7}
+.top-strip{background:var(--br);padding:6px 24px;font-size:11.5px;font-family:'IBM Plex Mono',monospace;color:rgba(255,255,255,.65);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+.top-strip a{color:#E8C882;text-decoration:none}
+header{position:sticky;top:0;z-index:50;background:var(--wh);border-bottom:1px solid var(--line);box-shadow:0 1px 8px rgba(44,26,14,.08)}
+.header-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:16px;height:var(--header-h);flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.brand-icon{width:38px;height:38px;background:var(--cr);border-radius:50%;border:2px solid var(--am);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.brand-text h1{font-size:15px;font-weight:700;color:var(--br);line-height:1.2}
+.brand-text .sup{font-size:10px;color:var(--mid);letter-spacing:.04em}
+nav{display:flex;align-items:center;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{padding:6px 14px;font-size:13px;color:var(--ts);text-decoration:none;border-radius:6px;transition:all .15s;white-space:nowrap}
+nav a:hover{background:var(--cr);color:var(--br)}
+nav a.active{color:var(--am);font-weight:600;border-bottom:2px solid var(--am)}
+.hero{background:linear-gradient(135deg,var(--br) 0%,var(--bm) 60%,#5C3315 100%);padding:48px 24px 40px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 85% 40%,rgba(196,125,46,.16) 0%,transparent 55%);pointer-events:none}
+.hero-inner{max-width:1200px;margin:0 auto;position:relative}
+.hero-label{font-size:11px;color:#E8C882;letter-spacing:.1em;text-transform:uppercase;font-family:'IBM Plex Mono',monospace;margin-bottom:10px}
+.hero h1{font-size:clamp(22px,3vw,34px);font-weight:800;color:#fff;line-height:1.38;margin-bottom:10px;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+.hero-sub{font-size:14px;color:rgba(255,255,255,.7);margin-bottom:28px;max-width:560px}
+.quick-select{display:flex;gap:10px;flex-wrap:wrap}
+.qs-btn{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.85);padding:8px 16px;border-radius:8px;font-size:13px;cursor:pointer;transition:all .15s;text-decoration:none;white-space:nowrap}
+.qs-btn:hover{background:rgba(255,255,255,.18);color:#fff}
+.qs-btn.warn{border-color:rgba(232,168,74,.5);color:#E8C882}
+.strata{height:12px;background:linear-gradient(180deg,var(--br) 0%,var(--br) 25%,var(--bm) 50%,var(--am) 75%,var(--cd) 100%)}
+.sec{padding:48px 24px}
+.sec-inner{max-width:1200px;margin:0 auto}
+.sec-label{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--am);margin-bottom:6px;font-family:'IBM Plex Mono',monospace}
+.sec-title{font-size:clamp(18px,2.5vw,24px);font-weight:700;color:var(--br);margin-bottom:6px}
+.sec-sub{font-size:14px;color:var(--ts);margin-bottom:32px}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:48px}
+@media(max-width:700px){.svc-grid{grid-template-columns:1fr}}
+.svc-card{background:var(--wh);border:1.5px solid var(--line);border-radius:14px;overflow:hidden;cursor:pointer;transition:all .2s;text-decoration:none;display:block}
+.svc-card:hover{box-shadow:0 6px 24px rgba(44,26,14,.12);transform:translateY(-2px)}
+.svc-card-top{padding:20px 22px 16px;display:flex;gap:14px;align-items:flex-start}
+.svc-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.svc-card-body h3{font-size:15px;font-weight:700;color:var(--br);margin-bottom:4px}
+.svc-card-body .ref{font-size:11px;color:var(--ts);font-family:'IBM Plex Mono',monospace}
+.svc-card-body .timeline{font-size:12.5px;color:var(--mid);margin-top:6px;display:flex;align-items:center;gap:6px}
+.svc-card-bottom{background:var(--cr);padding:10px 22px;border-top:1px solid var(--cd);font-size:12px;color:var(--ts);display:flex;justify-content:space-between;align-items:center}
+.svc-card-bottom .arrow{color:var(--am);font-size:16px}
+.detail-sec{margin-bottom:40px}
+.detail-anchor{display:block;height:80px;margin-top:-80px}
+.detail-header{background:var(--br);border-radius:14px 14px 0 0;padding:20px 28px;display:flex;align-items:center;gap:14px}
+.detail-header .dh-icon{width:40px;height:40px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;background:rgba(255,255,255,.1);flex-shrink:0}
+.detail-header h2{font-size:18px;font-weight:700;color:#fff}
+.detail-header .dh-ref{font-size:11px;color:rgba(255,255,255,.5);font-family:'IBM Plex Mono',monospace;margin-top:2px}
+.detail-body{background:var(--wh);border:1.5px solid var(--line);border-radius:0 0 14px 14px;border-top:0;overflow:hidden}
+.detail-2col{display:grid;grid-template-columns:1fr 1fr;gap:0}
+@media(max-width:700px){.detail-2col{grid-template-columns:1fr}}
+.detail-col{padding:24px 28px}
+.detail-col:first-child{border-right:1px solid var(--cd)}
+@media(max-width:700px){.detail-col:first-child{border-right:none;border-bottom:1px solid var(--cd)}}
+.detail-col h3{font-size:13.5px;font-weight:700;color:var(--br);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.detail-col h3::before{content:'';width:3px;height:14px;background:var(--am);border-radius:2px;display:inline-block;flex-shrink:0}
+.checklist{display:flex;flex-direction:column;gap:8px}
+.chk-item{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--tx);line-height:1.55}
+.chk-box{width:18px;height:18px;border:1.5px solid var(--line);border-radius:4px;flex-shrink:0;margin-top:2px;background:var(--cr);display:flex;align-items:center;justify-content:center}
+.chk-item.required .chk-box{border-color:var(--am);background:rgba(196,125,46,.08)}
+.steps{display:flex;flex-direction:column;gap:0}
+.step{display:flex;gap:12px;align-items:flex-start;position:relative;padding-bottom:14px}
+.step::after{content:'';position:absolute;left:12px;top:28px;bottom:0;width:1.5px;background:linear-gradient(to bottom,var(--am),transparent);opacity:.4}
+.step:last-child::after{display:none}
+.step-n{width:26px;height:26px;border-radius:50%;background:var(--br);color:#E8C882;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;z-index:1}
+.step-body h4{font-size:13px;font-weight:700;color:var(--br);margin-bottom:2px}
+.step-body p{font-size:12.5px;color:var(--ts);line-height:1.55}
+.time-badge{display:inline-flex;align-items:center;gap:6px;background:var(--cr);border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-size:12px;color:var(--ts);font-family:'IBM Plex Mono',monospace;margin-bottom:16px}
+.time-badge strong{color:var(--am);font-size:14px}
+.form-section{background:var(--cr);border-top:1px solid var(--cd);padding:18px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.form-section p{font-size:13px;color:var(--ts)}
+.btn-primary{background:var(--am);color:#fff;padding:10px 22px;border-radius:8px;text-decoration:none;font-size:13.5px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:opacity .15s}
+.btn-primary:hover{opacity:.88}
+.btn-outline{border:1.5px solid var(--am);color:var(--am);padding:9px 20px;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:all .15s}
+.btn-outline:hover{background:var(--am);color:#fff}
+.alert{border-radius:10px;padding:13px 16px;margin-bottom:16px;font-size:13px;line-height:1.65}
+.alert-warn{background:#FFF5E6;border:1px solid #F0C060;color:#7a4a00}
+.alert-teal{background:#E8F5F2;border:1px solid #A0D8CC;color:#1A4035}
+.report-card{background:var(--wh);border:1.5px solid var(--line);border-radius:14px;overflow:hidden}
+.report-header{background:#2F5D55;padding:18px 24px;display:flex;align-items:center;gap:12px}
+.report-header h2{font-size:17px;font-weight:700;color:#fff}
+.report-header p{font-size:11px;color:rgba(255,255,255,.6);margin-top:2px}
+.report-body{padding:22px 24px}
+.report-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+@media(max-width:600px){.report-grid{grid-template-columns:1fr}}
+.report-item{background:var(--cr);border-radius:10px;padding:14px 16px}
+.report-item h4{font-size:13px;font-weight:700;color:var(--br);margin-bottom:6px}
+.report-item p{font-size:12.5px;color:var(--ts);line-height:1.65}
+.contact-bar{background:var(--br);padding:28px 24px}
+.contact-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.contact-text h3{font-size:16px;font-weight:700;color:#fff;margin-bottom:4px}
+.contact-text p{font-size:13px;color:rgba(255,255,255,.6)}
+.contact-links{display:flex;gap:10px;flex-wrap:wrap}
+.cl-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#E8C882;padding:9px 18px;border-radius:8px;text-decoration:none;font-size:13px;transition:all .15s}
+.cl-btn:hover{background:rgba(255,255,255,.18)}
+footer{background:var(--br);color:rgba(255,255,255,.55);font-size:12px;padding:20px 24px;text-align:center}
+footer a{color:#E8C882;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="top-strip">
+  <span>กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</span>
+  <span><a href="tel:026219500">โทร. 0 2621 9500</a><span style="opacity:.3;margin:0 6px">·</span><a href="mailto:fossil@dmr.mail.go.th">fossil@dmr.mail.go.th</a></span>
+</div>
+<header>
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <div class="brand-icon">🪨</div>
+      <div class="brand-text"><div class="sup">กรมทรัพยากรธรณี · DMR</div><h1>กองคุ้มครองซากดึกดำบรรพ์</h1></div>
+    </a>
+    <nav>
+      <a href="index.html">กฎหมาย</a>
+      <a href="service.html" class="active">ขออนุมัติ-อนุญาต</a>
+      <a href="index.html#dashboardSection">สถิติ</a>
+      <a href="index.html#faqSection">FAQ</a>
+      <a href="about.html">เจตนารมณ์</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-label">บริการขออนุมัติ-อนุญาต</div>
+    <h1>เลือกประเภทที่ต้องการ<br>แล้วทำตามขั้นตอน</h1>
+    <p class="hero-sub">เตรียมเอกสารให้ครบก่อนยื่น ลดระยะเวลาดำเนินการ ไม่ต้องเดินทางหลายรอบ</p>
+    <div class="quick-select">
+      <a class="qs-btn" href="#sec-trade">🏪 ขออนุญาตค้า</a>
+      <a class="qs-btn" href="#sec-export">✈️ ส่งออก / นำเข้า</a>
+      <a class="qs-btn" href="#sec-research">🔬 ขุดค้นวิจัย</a>
+      <a class="qs-btn warn" href="#sec-report">⚠️ แจ้งพบซากดึกดำบรรพ์</a>
+    </div>
+  </div>
+</div>
+<div class="strata"></div>
+
+<div class="sec">
+  <div class="sec-inner">
+    <div class="sec-label">ประเภทบริการ</div>
+    <h2 class="sec-title">มีบริการอะไรบ้าง</h2>
+    <p class="sec-sub">แต่ละประเภทมีเอกสารและขั้นตอนที่แตกต่างกัน — เลือกให้ตรงกับสิ่งที่ต้องการ</p>
+    <div class="svc-grid">
+      <a class="svc-card" href="#sec-trade">
+        <div class="svc-card-top">
+          <div class="svc-icon" style="background:#F0E8D8">🏪</div>
+          <div class="svc-card-body">
+            <h3>ขออนุญาตค้าซากดึกดำบรรพ์</h3>
+            <div class="ref">พ.ร.บ. มาตรา 18–20</div>
+            <div class="timeline"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>ระยะเวลา: XX วัน</div>
+          </div>
+        </div>
+        <div class="svc-card-bottom"><span>สำหรับผู้ประกอบการที่ต้องการซื้อขายซากดึกดำบรรพ์</span><span class="arrow">→</span></div>
+      </a>
+      <a class="svc-card" href="#sec-export">
+        <div class="svc-card-top">
+          <div class="svc-icon" style="background:#E8F5F2">✈️</div>
+          <div class="svc-card-body">
+            <h3>ขออนุญาตนำเข้า-ส่งออก</h3>
+            <div class="ref">พ.ร.บ. มาตรา 21–23</div>
+            <div class="timeline"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>ระยะเวลา: XX วัน</div>
+          </div>
+        </div>
+        <div class="svc-card-bottom"><span>สำหรับการนำซากดึกดำบรรพ์เข้า-ออกราชอาณาจักร</span><span class="arrow">→</span></div>
+      </a>
+      <a class="svc-card" href="#sec-research">
+        <div class="svc-card-top">
+          <div class="svc-icon" style="background:#E8F0FB">🔬</div>
+          <div class="svc-card-body">
+            <h3>ขออนุญาตขุดค้นวิจัย</h3>
+            <div class="ref">พ.ร.บ. มาตรา 12–17</div>
+            <div class="timeline"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>ระยะเวลา: XX วัน</div>
+          </div>
+        </div>
+        <div class="svc-card-bottom"><span>สำหรับนักวิจัย สถาบันการศึกษา และหน่วยงานที่เกี่ยวข้อง</span><span class="arrow">→</span></div>
+      </a>
+      <a class="svc-card" href="#sec-report" style="border-color:#A0D8CC">
+        <div class="svc-card-top">
+          <div class="svc-icon" style="background:#E8F5F2">⚠️</div>
+          <div class="svc-card-body">
+            <h3>แจ้งพบซากดึกดำบรรพ์</h3>
+            <div class="ref">พ.ร.บ. มาตรา 14</div>
+            <div class="timeline" style="color:#2F5D55"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>ต้องแจ้งภายใน 30 วัน</div>
+          </div>
+        </div>
+        <div class="svc-card-bottom" style="background:#E8F5F2"><span>ผู้พบซากดึกดำบรรพ์ทุกคนมีหน้าที่ต้องแจ้ง</span><span class="arrow" style="color:#2F5D55">→</span></div>
+      </a>
+    </div>
+
+    <!-- ค้า -->
+    <div class="detail-sec">
+      <div class="detail-anchor" id="sec-trade"></div>
+      <div class="detail-header">
+        <div class="dh-icon">🏪</div>
+        <div><h2>ขออนุญาตค้าซากดึกดำบรรพ์</h2><div class="dh-ref">พ.ร.บ. มาตรา 18–20</div></div>
+      </div>
+      <div class="detail-body">
+        <div class="detail-2col">
+          <div class="detail-col">
+            <div class="time-badge"><strong>XX</strong> วัน · ระยะเวลาดำเนินการ</div>
+            <div class="alert alert-warn">⚠️ ต้องได้รับใบอนุญาตก่อนเริ่มค้าขาย — ค้าโดยไม่มีใบอนุญาตมีโทษตามมาตรา XX</div>
+            <h3>เอกสารที่ต้องใช้</h3>
+            <div class="checklist">
+              <div class="chk-item required"><div class="chk-box"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#C47D2E" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>แบบคำขออนุญาต (แบบ ทธ. XX)</span></div>
+              <div class="chk-item required"><div class="chk-box"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#C47D2E" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>สำเนาบัตรประชาชน / หนังสือเดินทาง</span></div>
+              <div class="chk-item required"><div class="chk-box"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#C47D2E" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>รายการซากดึกดำบรรพ์ที่ต้องการค้า (ภาพถ่าย + คำอธิบาย)</span></div>
+              <div class="chk-item required"><div class="chk-box"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#C47D2E" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>หลักฐานแสดงที่มาของซากดึกดำบรรพ์</span></div>
+              <div class="chk-item"><div class="chk-box"></div><span>สำเนาทะเบียนพาณิชย์ (ถ้ามี)</span></div>
+              <div class="chk-item"><div class="chk-box"></div><span>แผนที่แสดงสถานที่ค้า</span></div>
+            </div>
+          </div>
+          <div class="detail-col">
+            <h3>ขั้นตอน</h3>
+            <div class="steps">
+              <div class="step"><div class="step-n">1</div><div class="step-body"><h4>ดาวน์โหลดแบบคำขอ</h4><p>แบบ ทธ. XX จากเว็บ หรือรับที่กองคุ้มครองฯ</p></div></div>
+              <div class="step"><div class="step-n">2</div><div class="step-body"><h4>เตรียมเอกสารให้ครบ</h4><p>ตรวจสอบ checklist ด้านซ้าย เอกสารไม่ครบทำให้ล่าช้า</p></div></div>
+              <div class="step"><div class="step-n">3</div><div class="step-body"><h4>ยื่นคำขอ</h4><p>ยื่นที่กองคุ้มครองฯ หรือสำนักงานทรัพยากรธรณีเขต</p></div></div>
+              <div class="step"><div class="step-n">4</div><div class="step-body"><h4>รอการพิจารณา</h4><p>เจ้าหน้าที่แจ้งผลภายใน XX วันทำการ</p></div></div>
+              <div class="step"><div class="step-n">5</div><div class="step-body"><h4>รับใบอนุญาต</h4><p>อายุ XX ปี ต่ออายุก่อนหมดอายุ XX วัน</p></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-section">
+          <p>📋 ต้องการเตรียมข้อมูลหรือสอบถามก่อนยื่น</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a href="#" class="btn-primary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><polyline points="9 11 12 14 22 4"/></svg>กรอกข้อมูลเบื้องต้น</a>
+            <a href="tel:026219500" class="btn-outline">โทรสอบถาม</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ส่งออก -->
+    <div class="detail-sec">
+      <div class="detail-anchor" id="sec-export"></div>
+      <div class="detail-header" style="background:#1A4035">
+        <div class="dh-icon">✈️</div>
+        <div><h2>ขออนุญาตนำเข้า-ส่งออก</h2><div class="dh-ref">พ.ร.บ. มาตรา 21–23</div></div>
+      </div>
+      <div class="detail-body">
+        <div class="detail-2col">
+          <div class="detail-col">
+            <div class="time-badge"><strong>XX</strong> วัน · ยื่นล่วงหน้าก่อนวันส่งออก</div>
+            <div class="alert alert-warn">⚠️ ห้ามส่งออกก่อนได้รับอนุญาต โทษจำคุกสูงสุด 7 ปี หรือปรับสูงสุด 700,000 บาท</div>
+            <h3>เอกสารที่ต้องใช้</h3>
+            <div class="checklist">
+              <div class="chk-item required"><div class="chk-box"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#C47D2E" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>แบบคำขออนุญาตส่งออก / นำเข้า</span></div>
+              <div class="chk-item required"><div class="chk-box"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#C47D2E" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>รายการและภาพถ่ายซากทุกชิ้น</span></div>
+              <div class="chk-item required"><div class="chk-box"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#C47D2E" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>วัตถุประสงค์และปลายทาง</span></div>
+              <div class="chk-item required"><div class="chk-box"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#C47D2E" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>หลักฐานที่มาของซากดึกดำบรรพ์</span></div>
+              <div class="chk-item"><div class="chk-box"></div><span>หนังสือรับรองจากสถาบัน (กรณีวิจัย)</span></div>
+              <div class="chk-item"><div class="chk-box"></div><span>กำหนดการนำกลับ (กรณีชั่วคราว)</span></div>
+            </div>
+          </div>
+          <div class="detail-col">
+            <h3>ขั้นตอน</h3>
+            <div class="steps">
+              <div class="step"><div class="step-n">1</div><div class="step-body"><h4>ยื่นขอล่วงหน้า</h4><p>ยื่นก่อนวันที่ต้องการส่งออกไม่น้อยกว่า XX วันทำการ</p></div></div>
+              <div class="step"><div class="step-n">2</div><div class="step-body"><h4>การตรวจสอบ</h4><p>เจ้าหน้าที่อาจขอตรวจสอบซากดึกดำบรรพ์จริงก่อนอนุมัติ</p></div></div>
+              <div class="step"><div class="step-n">3</div><div class="step-body"><h4>รับใบอนุญาต</h4><p>ระบุจำนวน ประเภท และวันหมดอายุชัดเจน</p></div></div>
+              <div class="step"><div class="step-n">4</div><div class="step-body"><h4>แสดงที่ด่าน</h4><p>พกใบอนุญาตไปกับสินค้าตลอดการขนส่ง</p></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-section">
+          <p>📋 ต้องการสอบถามก่อนยื่นขออนุญาต</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a href="#" class="btn-primary">กรอกข้อมูลเบื้องต้น</a>
+            <a href="mailto:fossil@dmr.mail.go.th" class="btn-outline">ส่งอีเมลสอบถาม</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- วิจัย -->
+    <div class="detail-sec">
+      <div class="detail-anchor" id="sec-research"></div>
+      <div class="detail-header" style="background:#1A3060">
+        <div class="dh-icon">🔬</div>
+        <div><h2>ขออนุญาตขุดค้นวิจัย</h2><div class="dh-ref">พ.ร.บ. มาตรา 12–17</div></div>
+      </div>
+      <div class="detail-body">
+        <div class="detail-2col">
+          <div class="detail-col">
+            <div class="time-badge"><strong>XX</strong> วัน · พิจารณาโครงการ</div>
+            <div class="alert alert-teal">✓ การวิจัยซากดึกดำบรรพ์ได้รับการสนับสนุน — เป็นหนึ่งในเจตนารมณ์หลักของกฎหมาย</div>
+            <h3>เอกสารที่ต้องใช้</h3>
+            <div class="checklist">
+              <div class="chk-item required"><div class="chk-box"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#C47D2E" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>แบบคำขออนุญาตขุดค้น</span></div>
+              <div class="chk-item required"><div class="chk-box"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#C47D2E" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>โครงการวิจัย / วัตถุประสงค์ชัดเจน</span></div>
+              <div class="chk-item required"><div class="chk-box"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#C47D2E" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>แผนผังบริเวณที่จะขุดค้น</span></div>
+              <div class="chk-item required"><div class="chk-box"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#C47D2E" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>หนังสือยินยอมจากเจ้าของที่ดิน</span></div>
+              <div class="chk-item required"><div class="chk-box"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#C47D2E" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span>รายชื่อนักวิทยาศาสตร์/นักธรณีที่รับผิดชอบ</span></div>
+              <div class="chk-item"><div class="chk-box"></div><span>หนังสือรับรองจากสถาบัน</span></div>
+            </div>
+          </div>
+          <div class="detail-col">
+            <h3>ขั้นตอน</h3>
+            <div class="steps">
+              <div class="step"><div class="step-n">1</div><div class="step-body"><h4>เสนอโครงการ</h4><p>ยื่นโครงการวิจัยพร้อมเอกสารครบถ้วน</p></div></div>
+              <div class="step"><div class="step-n">2</div><div class="step-body"><h4>ตรวจสอบพื้นที่</h4><p>เจ้าหน้าที่อาจลงพื้นที่ตรวจสอบก่อนอนุมัติ</p></div></div>
+              <div class="step"><div class="step-n">3</div><div class="step-body"><h4>รับอนุญาต</h4><p>ระบุพื้นที่ ระยะเวลา และเงื่อนไขชัดเจน</p></div></div>
+              <div class="step"><div class="step-n">4</div><div class="step-body"><h4>รายงานผล</h4><p>ส่งรายงานผลการขุดค้นหลังเสร็จสิ้นตามกำหนด</p></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-section">
+          <p>📋 ต้องการปรึกษาก่อนยื่นโครงการ ทีมวิชาการพร้อมช่วยเหลือ</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a href="#" class="btn-primary">ส่งข้อมูลโครงการเบื้องต้น</a>
+            <a href="tel:026219500" class="btn-outline">โทรปรึกษา</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- แจ้งพบ -->
+    <div class="detail-anchor" id="sec-report"></div>
+    <div class="report-card">
+      <div class="report-header">
+        <div style="flex:1"><h2>แจ้งพบซากดึกดำบรรพ์</h2><p>พ.ร.บ. มาตรา 14 — ผู้พบทุกคนมีหน้าที่แจ้ง</p></div>
+        <div style="background:rgba(255,255,255,.15);border-radius:10px;padding:10px 16px;text-align:center">
+          <div style="font-size:28px;font-weight:800;color:#fff;font-family:'IBM Plex Mono',monospace">30</div>
+          <div style="font-size:11px;color:rgba(255,255,255,.7)">วัน ต้องแจ้ง</div>
+        </div>
+      </div>
+      <div class="report-body">
+        <div class="alert alert-teal">✓ ผู้แจ้งพบซากดึกดำบรรพ์ที่มีคุณค่าทางวิทยาศาสตร์ มีสิทธิ์ได้รับ <strong>บำเหน็จรางวัล</strong> จากรัฐ</div>
+        <div class="report-grid">
+          <div class="report-item"><h4>ก่อนแจ้ง — เตรียมอะไร</h4><p>📍 พิกัดหรือที่อยู่ที่พบ<br>📷 ภาพถ่ายซาก (ถ้าทำได้)<br>📏 ขนาดโดยประมาณ<br>📅 วันที่พบ</p></div>
+          <div class="report-item"><h4>ห้ามทำก่อนแจ้ง</h4><p>🚫 เคลื่อนย้ายซากดึกดำบรรพ์<br>🚫 ขุดหรือทำความสะอาด<br>🚫 แบ่งหรือตัดชิ้นส่วน<br>🚫 นำออกจากพื้นที่</p></div>
+          <div class="report-item"><h4>ช่องทางแจ้ง</h4><p>☎️ โทร. 0 2621 9500<br>📧 fossil@dmr.mail.go.th<br>🏢 กองคุ้มครองซากดึกดำบรรพ์<br>🌐 กรอกแบบฟอร์มด้านล่าง</p></div>
+          <div class="report-item"><h4>หลังแจ้งแล้ว</h4><p>เจ้าหน้าที่จะติดต่อกลับนัดตรวจสอบพื้นที่และประเมินคุณค่าของซากดึกดำบรรพ์ที่พบ</p></div>
+        </div>
+        <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
+          <a href="#" class="btn-primary" style="background:#2F5D55"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l1.42-1.42a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>แจ้งทางโทรศัพท์</a>
+          <a href="#" class="btn-primary" style="background:#2F5D55"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>กรอกแบบฟอร์มออนไลน์</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contact-bar">
+  <div class="contact-inner">
+    <div class="contact-text"><h3>ต้องการความช่วยเหลือเพิ่มเติม?</h3><p>เจ้าหน้าที่พร้อมให้คำปรึกษา วันจันทร์–ศุกร์ 08:30–16:30 น.</p></div>
+    <div class="contact-links">
+      <a class="cl-btn" href="tel:026219500"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l1.42-1.42a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>0 2621 9500</a>
+      <a class="cl-btn" href="mailto:fossil@dmr.mail.go.th"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>ส่งอีเมล</a>
+      <a class="cl-btn" href="index.html"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>ดูกฎหมายทั้งหมด</a>
+    </div>
+  </div>
+</div>
+<footer><p>กลุ่มคุ้มครองซากดึกดำบรรพ์ · กองคุ้มครองซากดึกดำบรรพ์ · กรมทรัพยากรธรณี · <a href="index.html">หน้าหลัก</a> · <a href="about.html">เจตนารมณ์กฎหมาย</a></p></footer>
+</body>
+</html>
